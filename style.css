@@ -4,6 +4,16 @@
   padding: 0px;
 }
 
+:root {
+  --bg-corprincipal: #ecf0f1;
+  --bg-corverde: #2ecc71;
+
+  --color1: #000;
+  --color2: #fff;
+  --color3: blue;
+  --fonte1: 15px;
+}
+
 body {
   font-family: sans-serif;
   font-weight: bold;
@@ -12,14 +22,12 @@ body {
   background-color: var(--bg-corprincipal);
 }
 
-:root {
-  --bg-corprincipal: #ecf0f1;
-  --bg-corverde: #2ecc71;
-
-  --color1: #000;
-  --color2: #fff;
-  --color3: blue;
-  --fonte1: 25px;
+main {
+  position: relative;
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-evenly;
+  max-height: 90%;
 }
 
 .container {
@@ -32,7 +40,7 @@ header {
 
 header nav ul {
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0 auto;
   display: flex;
 }
@@ -53,7 +61,7 @@ header nav ul li {
 }
 
 article div form {
-  width: 350px;
+  width: 380px;
   padding: 40px;
   margin: 20px auto;
   /* position: absolute; */
@@ -63,9 +71,9 @@ article div form {
   text-align: center;
 }
 
-.login h1 {
-  font-weight: 500;
-  margin: 0 auto;
+h1 {
+  font-weight: bold;
+  margin: 10px auto 20px auto;
 }
 
 form {
@@ -81,9 +89,8 @@ form {
   text-align: center;
   border: 2px solid #3498db;
   padding: 14px 10px;
-  width: 200px;
+  width: 180px;
   outline: none;
-  /* color: whitesmoke; */
   border-radius: 20px;
   transition: 0.25s;
 }
@@ -91,7 +98,7 @@ form {
 .box input[type="email"]:focus,
 .box input[type="password"]:focus {
   border: 2px solid #2ecc71;
-  width: 280px;
+  width: 250px;
 }
 
 .box input[type="submit"] {
@@ -103,7 +110,6 @@ form {
   border: 2px solid #2ecc71;
   padding: 14px 40px;
   outline: none;
-  /* color: whitesmoke; */
   border-radius: 20px;
   transition: 0.25s;
   cursor: pointer;
@@ -113,14 +119,12 @@ form {
   background: #2ecc71;
 }
 
-main {
-  position: relative;
+/* img .icone {
   display: flex;
-  margin: 20px auto;
-  justify-content: space-evenly;
-  max-height: 90%;
-}
+  padding-top: 50px;
+} */
 .mapa {
+  max-height: 380px;
   max-width: 40%;
 }
 
