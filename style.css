@@ -8,6 +8,8 @@ body {
   font-family: sans-serif;
   font-weight: bold;
   height: 100vh;
+  width: 100%;
+  background-color: var(--bg-corprincipal);
 }
 
 :root {
@@ -22,33 +24,35 @@ body {
 
 .container {
   max-width: 1600px;
-  background-color: var(--bg-corprincipal);
-  display: flex;
 }
 
-header ul {
-  display: flex;
+header {
+  border-bottom: 2px solid #2ecc71;
+}
+
+header nav ul {
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
+  display: flex;
 }
 
-header ul li a {
+header nav ul li a {
   text-decoration: none;
   color: var(--color1);
   font-size: var(--fonte1);
 }
 
-header ul li a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
   color: var(--color3);
 }
 
-header ul li {
+header nav ul li {
   list-style: none;
 }
 
-section form {
+article div form {
   width: 350px;
   padding: 40px;
   margin: 20px auto;
@@ -62,6 +66,10 @@ section form {
 .login h1 {
   font-weight: 500;
   margin: 0 auto;
+}
+
+form {
+  border: 2px solid #2ecc71;
 }
 
 .box input[type="email"],
@@ -105,26 +113,24 @@ section form {
   background: #2ecc71;
 }
 
-footer {
-  height: 100px;
-  padding: 20px 20px;
+main {
+  position: relative;
+  display: flex;
   margin: 20px auto;
+  justify-content: space-evenly;
+  max-height: 90%;
+}
+.mapa {
+  max-width: 40%;
+}
+
+footer {
+  position: absolute;
+  max-height: 100px;
+  width: 100%;
+  padding: 20px 20px;
+  margin: 0 auto;
   text-align: center;
   background-color: #34495e;
-}
-
-.header {
-  grid-area: header;
-}
-
-.main {
-  grid-area: main;
-}
-
-.aside {
-  grid-area: aside;
-}
-
-.footer {
-  grid-area: footer;
+  bottom: 0;
 }
