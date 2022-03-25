@@ -14,13 +14,14 @@
         <div class="logo">
           <nav>
             <ul>
-              <a href="https://www.gov.br/pt-br" target="_blank"
-                ><img
-                  src="/images/img.gov.br.png"
-                  alt="Logo do site do Gov.br"
-                  title="gov.br"
-              /></a>
-              <li></li>
+              <li>
+                <a href="https://www.gov.br/pt-br" target="_blank"
+                  ><img
+                    src="/images/img.gov.br.png"
+                    alt="Logo do site do Gov.br"
+                    title="gov.br"
+                /></a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -49,11 +50,11 @@
     <!-- logo -->
     <main class="container main">
       <article>
-        <div>
+        <div class="centralizar">
           <form class="box" action="index.html" method="get">
             <h1>LOGIN</h1>
 
-            <label for="Email">Email</label><br />
+            <label id="Email">Email</label><br />
             <div>
               <span
                 ><img
@@ -65,11 +66,12 @@
                 type="email"
                 placeholder="Digite seu e-mail"
                 name="e-mail"
+                required
               />
             </div>
 
             <br />
-            <label for="Senha">Senha</label><br />
+            <label id="Senha">Senha</label><br />
             <span class="icone"
               ><img
                 src="./images/cadeadoVerde.png"
@@ -80,11 +82,11 @@
               type="password"
               placeholder="Digite sua senha"
               name="Senha"
+              required
             />
 
             <input type="submit" name="Login" value="Login" />
-
-            <i class="fa-solid fa-user"></i>
+            <button class="cadastrar" title="Cadastrar">Casdastrar ➤</button>
           </form>
         </div>
       </article>
@@ -103,7 +105,7 @@
       </aside>
     </main>
     <!-- rodape -->
-    <!-- <footer class="container footer">
+    <footer class="footer">
       <div>
         <p>
           Criado por <em>Felipe Y Castro</em>
@@ -122,10 +124,9 @@
               title="Meu GitHub" /></a
           ><br />Para apresentar um protótipo da Tarefa 2 do trabalho Projeto
           Integrado III, do 3° semestre de Análise e Desenvolvimento de
-          Sistemas.<br />
-          Uma página de login para o Ministério da Educação
+          Sistemas. Uma página de login para o Ministério da Educação.
         </p>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
